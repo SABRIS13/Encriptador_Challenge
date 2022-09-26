@@ -8,29 +8,39 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
         <title> Encriptador</title>
 
     </head>
     <body>
         <header>
-            <img src="/imagen/Logologo.png" alt="Logo de alura, letra A">
+            <div class="inicio">
+                <h1>Encriptador</h1> 
+            </div>
+            
+
         </header>
 
         <main>
-            <section>
-                <textarea class="inputTexto" cols="40" rows="6" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="entrada">
+                <textarea class="inputTexto"  placeholder="Ingrese el texto aquí"></textarea>
 
                 <div class="botones">
-                    <button class="encriptar" onclick="btnEncriptar()"> Encriptar </button>
-                    <button class="desencriptar" onclick="btnDesencriptar()"> Desencriptar </button>
+                    <button class="encriptar" onclick="btnEncriptar()"> Encriptar 🔒</button>
+                    <button class="desencriptar" onclick="btnDesencriptar()"> Desencriptar 🔓 </button>
                 </div>
 
-            </section>
+            </div>
+            <div class="candado">
+                <img src="/imagen/lock_close.png">
+            </div>
 
-            <section>
-                <textarea class="mensaje" cols="18" rows="8" placeholder="Ingrese el texto aquí"></textarea>
-                <button class="copiar" onclick="btnCopiar()" > Copiar </button>
-            </section>
+            <div class="salida">
+                <textarea class="mensaje" placeholder="Ingrese el texto aquí"></textarea>
+                <button class="copiar" onclick="btnCopiar()" > Copiar 🖇 </button>
+            </div>
 
         </main>
         <script src="script.js"></script>

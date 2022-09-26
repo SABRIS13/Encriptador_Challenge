@@ -1,8 +1,30 @@
+header{
+    background-color:#eace19;
+}
+.inicio{
+    width: 940px;
+    display:flex;
+    color:white;
+    font-size: 20px;
+    align-self: center;
+}
 
 
 body{
     background-color:white;
 
+}
+.inputTexto, .mensaje{
+        margin:20px;
+        width: 80%;
+        height:50%;
+        padding:50px;
+        border-style: none;
+        border-radius: 20px;
+        background-color:whitesmoke;
+        font-size: 20px;
+        resize: none;
+        box-shadow: inset 5px 5px 12px 0 rgba(3, 2, 0, 0.15);
 }
 
 main{
@@ -10,4 +32,17 @@ main{
     margin-left:80px;
     margin-bottom: 50px;
 }
+.entrada, .salida, .candado{
+    width:30%
+}
 
+.candado img{
+    width:50%;
+    align-self:center;
+    padding: 15% 30%;
+   
+}
+
+h1{
+    font-family: 'EB Garamond', serif;
+}
