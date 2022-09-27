@@ -1,5 +1,6 @@
 const inputTexto=document.querySelector(".inputTexto");
 const mensaje=document.querySelector(".mensaje");
+const imagen=document.querySelector(".lock");
 
 /*
 La letra "e" es convertida para "enter"
@@ -14,6 +15,7 @@ function btnEncriptar(){
     mensaje.value=textoEncriptado;
     mensaje.style.backgroundImage="none";
     inputTexto.value="";
+    imagen.src="/imagen/lock_close.png";
 }
 
 function encriptar(stringEncriptado){
@@ -33,7 +35,7 @@ function btnDesencriptar(){
     mensaje.value=TextoDesencriptado;
     mensaje.style.backgroundImage="none";
     inputTexto.value="";
-    
+    imagen.src="/imagen/lock_open.png";
 }
 
 
@@ -50,8 +52,10 @@ function desencriptar(stringDesencriptado){
 
 }
 
+
  function btnCopiar(){
     copy=document.querySelector(".mensaje")
     navigator.clipboard.writeText(copy.value);
     copy.value="";
+    imagen.src="/imagen/keys.png";
  }
