@@ -8,19 +8,25 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+
+        <!-- Fonnts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:ital@1&display=swap" rel="stylesheet">
+
         <title> Encriptador</title>
 
     </head>
     <body>
         <header>
             <div class="inicio">
-                <h1>Encriptador</h1> 
+                <img src="/imagen/llaves.png" alt="Dos llaves en una llavero">
+                <h1> Encriptador</h1>    
             </div>
-            
-
         </header>
 
         <main>
@@ -30,8 +36,12 @@
                 <div class="botones">
                     <button class="encriptar" onclick="btnEncriptar()"> Encriptar 🔒</button>
                     <button class="desencriptar" onclick="btnDesencriptar()"> Desencriptar 🔓 </button>
+                    
                 </div>
-
+                <div class="recomendacion">
+                    Sólo letras minúsculas y sin acentos
+                </div>
+                
             </div>
             <div class="candado">
                 <img src="/imagen/lock_close.png">
@@ -39,10 +49,18 @@
 
             <div class="salida">
                 <textarea class="mensaje" placeholder="Ingrese el texto aquí"></textarea>
-                <button class="copiar" onclick="btnCopiar()" > Copiar 🖇 </button>
+                <div class="boton_salida">
+                    <button class="copiar" onclick="btnCopiar()" > Copiar 🧷  </button>
+                </div>
             </div>
 
         </main>
         <script src="script.js"></script>
     </body>
+    <footer>
+       <div>
+            2022 Sabrina Contreras
+
+       </div>   
+    </footer>
 </html>
