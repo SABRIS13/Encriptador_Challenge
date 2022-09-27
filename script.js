@@ -3,6 +3,9 @@ const mensaje=document.querySelector(".mensaje");
 const imagen=document.querySelector(".lock");
 
 /*
+
+Encriptación y desencriptación del mensaje
+
 La letra "e" es convertida para "enter"
 La letra "i" es convertida para "imes"
 La letra "a" es convertida para "ai"
@@ -10,12 +13,15 @@ La letra "o" es convertida para "ober"
 La letra "u" es convertida para "ufat" 
 */
 
+
+/*
+Función de encriptación
+*/
 function btnEncriptar(){
     const textoEncriptado=encriptar(inputTexto.value)
     mensaje.value=textoEncriptado;
-    mensaje.style.backgroundImage="none";
-    inputTexto.value="";
-    imagen.src="/imagen/lock_close.png";
+    inputTexto.value=""; /*Borrar texto en cuadro de escritura*/
+    imagen.src="imagen/lock_close.png"; /*Cambio de imagen*/
 }
 
 function encriptar(stringEncriptado){
@@ -30,14 +36,16 @@ function encriptar(stringEncriptado){
     return stringEncriptado;
 }
 
+/*
+Función de desencriptación
+*/
+
 function btnDesencriptar(){
     const TextoDesencriptado=desencriptar(inputTexto.value)
     mensaje.value=TextoDesencriptado;
-    mensaje.style.backgroundImage="none";
-    inputTexto.value="";
-    imagen.src="/imagen/lock_open.png";
+    inputTexto.value=""; /*Borrar texto en cuadro de escritura*/
+    imagen.src="imagen/lock_open.png"; /*Cambio de imagen*/
 }
-
 
 function desencriptar(stringDesencriptado){
     let matrizCodigo=[["e","enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat"]];
@@ -51,11 +59,13 @@ function desencriptar(stringDesencriptado){
     return stringDesencriptado;
 
 }
-
+/*
+Función de copiar
+*/
 
  function btnCopiar(){
     copy=document.querySelector(".mensaje")
     navigator.clipboard.writeText(copy.value);
-    copy.value="";
-    imagen.src="/imagen/keys.png";
+    copy.value="";/*Borrar texto en cuadro de salida de mensaje*/
+    imagen.src="imagen/keys.png"; /*Cambio de imagen*/
  }

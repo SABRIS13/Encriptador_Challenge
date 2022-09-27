@@ -22,17 +22,19 @@
 
     </head>
     <body>
-
+        <!-- -->
         <header>
             <div class="inicio">
-                <img src="/imagen/encriptado.png" alt="Dos llaves en una llavero">
+                <img src="imagen/encriptado.png" alt='Dos dialogos con un dibujo de candado'/>
                 <h1>  Encriptador</h1> 
                    
             </div>
         </header>
 
         <main>
+
             <div class="entrada">
+                <!-- Área de escritura-->
                 <textarea class="inputTexto"  placeholder="Ingrese el texto aquí"></textarea>
 
                 <div class="botones">
@@ -40,15 +42,21 @@
                     <button class="desencriptar" onclick="btnDesencriptar()"> Desencriptar 🔓 </button>
                     
                 </div>
+                <!-- Recomendaciones de uso-->
                 <div class="recomendacion">
-                    Sólo letras minúsculas y sin acentos
+                    Sólo letras minúsculas y sin acentos 
                 </div>
                 
             </div>
+            <!-- Imagen cambiante dependiendo del botón presionado:
+                Candado cerrado: Default o precionar botón de encriptar
+                Candado abierto: Dar clic en botón de desencriptar
+                Llaves: Al presionar botón de copiar
+            -->
             <div class="candado">
-                <img class="lock" onclick="changeImage()" src="/imagen/lock_close.png">
+                <img class="lock" onclick="changeImage()" src="imagen/lock_close.png" alt="Candado cerrado"/>
             </div>
-
+             <!-- Espacio de resultados-->
             <div class="salida">
                 <textarea class="mensaje" placeholder="Ingrese el texto aquí"></textarea>
                 <div class="boton_salida">
@@ -57,22 +65,24 @@
             </div>
 
         </main>
+        <!-- Referencia a archivo JS-->
         <script src="script.js"></script>
+
         <footer>
-        <div class="info">
+            <div class="info">
+                <!-- Datos generales-->
                 <div class="datos">
                     <p>&copy Alura Challenges - 2022  <br>
                         Sabrina Contreras </p> 
                 </div>
-                
+                <!-- Redes sociales para contacto-->
                 <div class="contacto">
-                            <a href="https://linkedin.com/in/sabrina-contreras" target="blank"><img  src="/imagen/linkedin.png" alt="Logo de linkedin"/></a>
-                            <a href="https://github.com/SABRIS13" target="blank"><img src="/imagen/github.png" alt="Logo de github"/></a>
-                            <a href = "mailto:sabriscon1307@gmail.com" target="blank"><img src="/imagen/email.png"  alt="Logo de email"/></a>
+                            <a href="https://linkedin.com/in/sabrina-contreras" target="blank"><img  src="imagen/linkedin.png" alt="Logo de linkedin"/></a>
+                            <a href="https://github.com/SABRIS13" target="blank"><img src="imagen/github.png" alt="Logo de github"/></a>
+                            <a href = "mailto:sabriscon1307@gmail.com" target="blank"><img src="imagen/email.png"  alt="Logo de email"/></a>
                         
                 </div>  
-        </div> 
-        
+            </div> 
         </footer>
     </body>
 </html>
