@@ -15,7 +15,6 @@ header{
 .inicio{
     display: flex;
     color:#494e51;
-    font-size: 20px;
     justify-content:center;
 }
 
@@ -27,6 +26,7 @@ header{
 .inicio img{
     height:60px;
     margin-top: 10px;
+    padding-right: 1%;
 }
 
 
@@ -44,7 +44,7 @@ main{
     margin-bottom: 50px;
 }
 .entrada, .salida, .candado{
-    width:30%
+    width:33%
 }
 .inputTexto, .mensaje{
     margin:20px 20px;
@@ -139,10 +139,18 @@ footer{
     font-weight: bold;
     margin-top: 15px;
     display: flex;
+    
+}
+
+.contacto{
+    margin-left:80%;
+    display: flex;
 }
 
 .contacto img{
-    width:30px;
+    width:40px;
+    margin-top: 10px;
+    padding-right: 10px;
 }
 
 
